@@ -1,0 +1,18 @@
+@use '../abstracts/mixins';
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 3em;
+    height: 7em;
+    &__logo{
+        a{
+            .logo{
+                font-size: 2em;
+                font-family: var(--font-Mooli);
+                font-weight: 700;
+                color: var(--secundary-color);
+            }
+        }
+    }
+}

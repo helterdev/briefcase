@@ -1,0 +1,77 @@
+.tools{
+    background-color: var(--primary-color);
+    padding-top: 5em;
+    padding-left: 4em;
+    padding-right: 4em;
+    &-container{
+        margin-bottom: 3em;
+        &__title{
+            font-size: 3em;
+            color: var(--fourt-color);
+            font-weight: 700;
+        }
+
+        &__paragrah{
+            margin: 0.7em 0;
+            line-height: 1.6;
+            color: var(--primary-text-color);
+        }
+    }
+
+    &-description{
+        &__title{
+            font-size: 3em;
+            color: var(--fourt-color);
+            font-weight: 700;
+        }
+        &__container{
+            margin-top: 0.7em;
+            padding-bottom: 0.7em;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            .tools-icons{
+                width: 6.5em;
+                height: 6.5em;
+                cursor: pointer;
+                fill: var(--secundary-text-color);
+                transition: 0.1s ease-in-out all;
+                &--html:hover{
+                    fill: #E34F26;
+                }
+                &--css:hover{
+                    fill: #1572B6;
+                }
+                &--javascript:hover{
+                    fill: #F7DF1E;
+                }
+                &--react:hover{
+                    fill: #09D3AC;
+                }
+                &--redux:hover{
+                    fill: #764ABC;
+                }
+                &--sass:hover{
+                    fill: #CC6699;
+                }
+                &--tailwind:hover{
+                    fill: #06B6D4;
+                }
+                &--typescript:hover{
+                    fill: #3178C6;
+                }
+                &--git:hover{
+                    fill: #F05032;
+                }
+                //github
+                &--figma:hover{
+                    fill: #F24E1E;
+                }
+                &--trello:hover{
+                    fill: #0052CC;
+                }
+            }
+        }
+    }
+
+}

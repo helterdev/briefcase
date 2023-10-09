@@ -1,0 +1,52 @@
+.profile{
+    background-color: var(--primary-color);
+    &__container{
+        display: flex;
+        align-items: center;
+        padding-top: 3em;
+        padding-left: 4em;
+        padding-right: 4em;
+        .article{
+            &__container{
+                h1{
+                    font-size: 3em;
+                    color: var(--fourt-color);
+                }
+                p{
+                    margin: 1em 0;
+                    font-size: 1.5em;
+                    line-height: 1.2;
+                    text-align: justify;
+                    color: var(--primary-text-color);
+                }
+            }
+        }
+
+        .about-me{
+            margin: 4em 0;
+            &__container{
+                display: flex;
+                column-gap: 1.2em;
+                align-items: baseline;
+                li{
+                    line-height: 1.2;
+                    color: var(--primary-text-color);
+                    font-weight: 300;
+                }
+            }
+        }
+
+        
+    }
+    &__photo{
+        padding: 4em 0;
+        background-color: var(--tertiary-color);
+        .photo-container{
+            text-align: center;
+            &__photo{
+                width: 12em;
+                border-radius: 10px;
+            }
+        }
+    }
+}
