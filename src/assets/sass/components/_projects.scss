@@ -4,5 +4,72 @@
         padding-top: 5em;
         padding-left: 4em;
         padding-right: 4em;
+        &__title{
+            font-size: 3em;
+            font-weight: 700;
+            color: var(--fourt-color);
+            padding: 0.7em 0;
+        }
+        &__div{
+            margin-top: 0.7em;
+            padding-bottom: 0.7em;
+            .projects-card{
+                width: 18.75em;
+                height: 25em;
+                background-image: linear-gradient(163deg, var(--secundary-color) 0%, var(--fourt-color) 50%, #0044ff 100%);
+                border-radius: 20px;
+                transition: all .3s;
+                box-shadow: 0px 0px 30px 1px rgba(255, 0, 157, 0.3);
+                margin: 3em 0;
+                &:hover{
+                    box-shadow: 0px 0px 30px 1px rgba(255, 0, 157, 0.3);
+                }
+                &:active{
+                    transform: scale(0.9);
+                }
+                &__secundary{
+                    width: inherit;
+                    height: inherit;
+                    transition: all .2s;
+                    background-color: var(--primary-color);
+                    &:hover{
+                        transform: scale(0.98);
+                        border-radius: 20px;
+                    }
+                   .card-container{
+                    height: 100%;
+                    padding: 2em;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    box-sizing: border-box;
+                    h3{
+                        font-size: 2em;
+                        font-weight: 400;
+                        margin-top: 1rem;
+                        color: var(--secundary-color);
+                    }
+                    p{
+                        
+                        line-height: 1.2;
+                        color: var(--primary-text-color);
+                    }
+                    &__link{
+                        display: flex;
+                        justify-content: space-between;
+
+                    }
+                    // &__img{
+                    //     display: flex;
+                    //     justify-content: center;
+                    //     img{
+                    //         width: 90%;
+                    //         border-radius: 20px;
+                    //     }
+                    // }
+                   }
+                }
+            }
+        }
     }
 }

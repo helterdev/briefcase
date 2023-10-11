@@ -1,3 +1,4 @@
+import ContactMe from "./components/Contactme"
 import Header from "./components/Header"
 import Profile from "./components/Profile"
 import Projects from "./components/Projects"
@@ -13,6 +14,7 @@ function App() {
         <Profile/>
         <Tools/>
         <Projects/>
+        <ContactMe/>
       </main>
     </div>
   )
