@@ -6,7 +6,8 @@ import {BiLogoJavascript,BiLogoReact,BiLogoRedux, BiLogoTailwindCss,
 
 const Tools = () => {
     return (
-        <section className="tools">
+        <section className="tools-section">
+            <div className="tools">
             <div className="tools-container">
                 <h2 className="tools-container__title">Engineering</h2>
                 <p className="tools-container__paragrah">When creating JavaScript applications, 
@@ -66,6 +67,7 @@ const Tools = () => {
                         <p>trello</p>
                     </ToolsMotion>
                 </ul>
+            </div>
             </div>
         </section>
     )

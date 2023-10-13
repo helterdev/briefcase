@@ -1,4 +1,5 @@
 import ContactMe from "./components/Contactme"
+import Footer from "./components/Footer"
 import Header from "./components/Header"
 import Profile from "./components/Profile"
 import Projects from "./components/Projects"
@@ -16,6 +17,7 @@ function App() {
         <Projects/>
         <ContactMe/>
       </main>
+      <Footer/>
     </div>
   )
 }

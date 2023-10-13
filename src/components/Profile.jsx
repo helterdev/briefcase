@@ -1,6 +1,7 @@
 const Profile = () => {
     return(
-        <section className="profile">
+        <section className="profile-div">
+            <div className="profile">
             <div className="profile__container">
                 <article className="article">
                     <div className="article__container">
@@ -13,7 +14,7 @@ const Profile = () => {
                             </span>
                         </h1>
                         <p>
-                            Hello! My name is Helter Velez and I am a frontend developer.
+                            Hello! My name is Helter Conforme Velez and I am a frontend developer.
                             <br />
                             I like to create modern, robust and scalable frontend products based on the best possible user experience.
                         </p>
@@ -34,6 +35,7 @@ const Profile = () => {
                      <img className="photo-container__photo" src="/profile.jpeg" alt="profile" title="profile"></img>               
                     
                 </figure>     
+            </div>
             </div>
         </section>
 

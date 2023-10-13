@@ -1,11 +1,14 @@
-.profile{
+@use '../abstracts/mixins';
+.profile-div{
     background-color: var(--primary-color);
+}
+.profile{
+    // background: linear-gradient(90deg, var(--primary-color) 67%, var(--tertiary-color) 33%);
+    padding-top: 5em;
+    padding-left: 4em;
+    padding-right: 4em;
+    padding-bottom: 5em;
     &__container{
-        display: flex;
-        align-items: center;
-        padding-top: 3em;
-        padding-left: 4em;
-        padding-right: 4em;
         .article{
             &__container{
                 h1{
@@ -39,8 +42,7 @@
         
     }
     &__photo{
-        padding: 4em 0;
-        background-color: var(--tertiary-color);
+
         .photo-container{
             text-align: center;
             &__photo{
@@ -48,5 +50,31 @@
                 border-radius: 10px;
             }
         }
+    }
+}
+
+@include mixins.tablet{
+    .profile{
+        display: flex;
+        align-items: center;
+        padding-bottom: 5em;
+        &__container{
+            padding-right: 3em;
+        }
+    }
+}
+@include mixins.lapto{
+    .profile-div{
+        .profile{
+            padding-top: 12em;
+            padding-bottom: 12em;
+        }
+
+    }
+}
+@include mixins.desktop{
+    .profile{
+        max-width: 1024px;
+        margin: 0 auto;
     }
 }

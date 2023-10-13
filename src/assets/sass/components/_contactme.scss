@@ -1,10 +1,11 @@
+@use '../abstracts/mixins';
 .section-form{
     background-color: var(--primary-color);
     .form-container{
         padding-top: 5em;
         padding-left: 4em;
         padding-right: 4em;
-        padding-bottom: 0.7em;
+        padding-bottom: 5em;
         h2{
            font-size: 3em;
            color: var(--fourt-color); 
@@ -94,5 +95,31 @@
   
     100% {
       background-position: 0% 50%;
+    }
+  }
+
+  @include mixins.tablet{
+    .section-form{
+        .form-container{
+            padding-bottom: 5em;
+        }
+    }
+  }
+
+  @include mixins.lapto{
+    .section-form{
+        .form-container{
+            padding-top: 12em;
+            padding-bottom: 12em;
+        }
+    }
+  }
+
+  @include mixins.desktop{
+    .section-form{
+        .form-container{
+            max-width: 1024px;
+            margin: 0 auto;
+        }
     }
   }

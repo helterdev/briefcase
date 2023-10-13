@@ -1,12 +1,11 @@
-import {BsCodeSlash} from 'react-icons/bs'
-const Header = () => {
-    return <header className="header">
-        <div className="header-container">
-            <div className="header__logo">
-                <a href="/"><h3 className="logo">Welcome<br/><BsCodeSlash/></h3></a>
-            </div>
-            
-                <div className='header__contact'>
+const Footer = () => {
+    const date = new Date();
+    const year = date.getFullYear();
+    return (
+        <footer className="footer-section">
+            <div className="footer-container">
+                <div>
+                    <h3>Say Hello</h3>
                     <ul className="contact">
                         <li>
                             <a href="https://www.linkedin.com/in/helter-conforme-velez-59848218b/">LinkedIn</a>
@@ -20,11 +19,12 @@ const Header = () => {
 
                     </ul>
                 </div>
-            
-
-        </div>
-        
-    </header>
+                <div className="footer-date">
+                    <span>© {year}</span>
+                </div>
+            </div>
+        </footer>
+    )
 }
 
-export default Header;
+export default Footer;

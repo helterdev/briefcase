@@ -1,18 +1,73 @@
 @use '../abstracts/mixins';
 .header{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 3em;
-    height: 7em;
-    &__logo{
-        a{
-            .logo{
-                font-size: 2em;
-                font-family: var(--font-Mooli);
-                font-weight: 700;
-                color: var(--secundary-color);
+    background-color: var(--primary-color);
+    &-container{
+        
+        padding-top: 5em;
+        padding-left: 4em;
+        padding-right: 4em;
+        padding-bottom: 5em;
+
+        @include mixins.tablet{
+            padding-bottom: 5em;
+        }
+        .header__logo{
+            a{
+                .logo{
+                    font-size: 3em;
+                    font-family: var(--font-Mooli);
+                    color: var(--fourt-color);
+                    line-height: 1.2;
+                }
             }
+        }
+
+        .header__contact{
+            .contact{
+                font-size: 1.5em;
+                margin-top: 1em;
+                color: var(--fourt-color);
+                li{
+                    margin: 1em 0;
+                    a{
+                        padding-bottom: 3px;
+                        &:hover{
+                            border-bottom: 1px solid #f5f5f5;
+                            transition: .3s ease-in-out;
+                            color: #f5f5f5;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@include mixins.tablet{
+    .header{
+        &-container{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+}
+
+@include mixins.lapto{
+    .header{
+        &-container{
+           padding-top: 12em;
+           padding-bottom: 12em;
+        }
+    }
+}
+
+@include mixins.desktop{
+    .header{
+        &-container{
+            max-width: 1024px;
+            margin: 0 auto;
         }
     }
 }

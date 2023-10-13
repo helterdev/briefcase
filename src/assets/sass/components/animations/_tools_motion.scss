@@ -1,3 +1,4 @@
+@use '../../abstracts/mixins';
 .tools-motion{
     display: inline-flex;
     flex-direction: column;
@@ -8,5 +9,12 @@
         }
         color: var(--primary-text-color);
         font-weight: 300;
+    }
+}
+
+@include mixins.lapto{
+    .tools-motion{
+        // max-width: 200px;
+        width: 200px;
     }
 }

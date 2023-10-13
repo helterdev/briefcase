@@ -3,3 +3,15 @@
         @content;
     }
 }
+
+@mixin lapto{
+    @media screen and (width > 1000px) {
+        @content;
+    }
+}
+
+@mixin desktop{
+    @media screen and (width > 1200px){
+        @content;
+    }
+}
