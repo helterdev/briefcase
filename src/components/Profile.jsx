@@ -13,9 +13,10 @@ const Profile = () => {
                                 <span>.</span>
                             </span>
                         </h1>
-                        <p>
-                            Hello! My name is Helter Conforme Velez and I am a frontend developer.
+                        <p className="article__paragrah">
+                            Hello!<br/> My name is Helter Conforme Velez and I am a frontend developer.
                             <br />
+                            
                             I like to create modern, robust and scalable frontend products based on the best possible user experience.
                         </p>
                     </div>
