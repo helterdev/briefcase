@@ -73,7 +73,7 @@ const ContactMe = () => {
                         })}></textarea>
                         {errors.message && <span className="message-error">{errors.message.message}</span>}
                     </div>
-                    <Button text={"Send"} icon={<IoSend style={{fill: "#f5f5f5"}}/>} type={"submit"}/>
+                    <Button text={"Send"} icon={<IoSend style={{fill: "#f5f5f5"}}/>} type={"submit"} link={"#"}/>
                 </form>
                 </div>
             </div>
